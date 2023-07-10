@@ -1,112 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hybris | Soon™</title>
-    <link rel="shortcut icon" href="favicon/black.svg" type="image/svg+xml" />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://hybrismc.dev" />
-    <meta property="og:title" content="Hybris | Soon™" />
-    <meta property="og:site_name" content="Hybris" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="og:image"
-      content="https://cdn.discordapp.com/attachments/1002707512371453972/1109244144439804065/Yes._It_is_happening.png"
-    />
-
-    <meta name="theme-color" content="#cfcfcf" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        margin: 0;
-        overflow: hidden;
-        color: #303030;
-        font-family: 'Plus Jakarta Sans', sans-serif;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        body {
-          color: #cfcfcf;
-        }
-      }
-
-      img#wallpaper {
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-      }
-
-      img#logo {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        width: 17vw;
-        height: 17vw;
-        min-width: 200px;
-        min-height: 200px;
-        object-fit: contain;
-      }
-
-      h1 {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        user-select: none;
-        font-size: 5em;
-      }
-
-      @media screen and (max-width: 500px) {
-        h1 {
-          font-size: 4em;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Do you really think we were leaving? -->
-    <!-- Enjoy the wait :) -->
-    <img id="wallpaper" alt="Hybris' wallpaper" draggable="false" />
-    <img id="logo" alt="Hybris' logo" draggable="false" />
-    <h1>Soon™</h1>
-
-    <script>
-      function adaptToColorScheme(dark) {
-        const filename = dark ? 'black' : 'white';
-        const oppositeFilename = dark ? 'white' : 'black';
-
-        document
-          .querySelector('link[rel="shortcut icon"]')
-          .setAttribute('href', `favicon/${oppositeFilename}.svg`);
-
-        document
-          .querySelector('img#wallpaper')
-          .setAttribute('src', `wallpaper/${filename}.png`);
-
-        document
-          .querySelector('img#logo')
-          .setAttribute('src', `favicon/${oppositeFilename}.svg`);
-      }
-
-      const prefersDarkScheme = window.matchMedia(
-        '(prefers-color-scheme: dark)'
-      );
-      adaptToColorScheme(prefersDarkScheme.matches);
-      prefersDarkScheme.addEventListener('change', (event) =>
-        adaptToColorScheme(event.matches)
-      );
-    </script>
-  </body>
+<html>
+<head>
+  <title>EternityCraft Server</title>
+</head>
+<body>
+  <h1>Welcome to EternityCraft Server!</h1>
+  
+  <h2>Explore Our Map</h2>
+  <a href="map.eternitycraft.me">Click here to access our map</a>
+  
+  <h2>Vote for EternityCraft</h2>
+  <p>Help us grow by voting for our server:</p>
+  <ul>
+    <li><a href="vote.eternitycraft.me">Vote on Website 1</a></li>
+    <li><a href="vote.eternitycraft.me">Vote on Website 2</a></li>
+    <li><a href="vote.eternitycraft.me">Vote on Website 3</a></li>
+  </ul>
+  
+  <h2>Visit Our Shop</h2>
+  <p>Get amazing in-game items and support the server:</p>
+  <a href="shop.eternitycraft.me">Visit our shop</a>
+</body>
 </html>
+
